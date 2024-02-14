@@ -1,0 +1,17 @@
+.image img {
+  height: 100px;
+  width: 241px;
+
+  margin-left: 40px;
+}
+.top-header {
+  height: 148px;
+  background: rgba(9, 199, 225, 0.28);
+}
+.nav-item {
+  font-size: 32px;
+}
+.barLine{
+    height: 20px;
+    background:rgba(18, 119, 212, 1);
+}

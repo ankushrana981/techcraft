@@ -1,0 +1,14 @@
+.contactForm {
+  background: rgba(208, 228, 246, 1);
+}
+.form-control.textArea {
+  height: 336px;
+}
+.submitButton {
+  font-size: 32px;
+  font-weight: 400;
+  background: rgba(18, 119, 212, 1);
+}
+.form-control {
+  height: 48px;
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+.banner {
+  height: 1080px;
+  background-image: url("../../../assets/images/banner-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner-text {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: white;
+  line-height: 100px;
+  padding-top: 140px;
+}
+

@@ -1,0 +1,19 @@
+<header class="site-header">
+
+    <div class="top-header px-3">
+        <div class="row py-4 align-items-center">
+            <div class="col-3 image" routerLink="/">
+                <img src="../../../assets/images/logo.svg" alt="main-logo">
+            </div>
+            <div class="col-9">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item px-5" *ngFor="let item of navList">
+                        <a class="nav-link" routerLink="{{item.url}}">{{item.text}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="barLine">
+    </div>
+</header>
