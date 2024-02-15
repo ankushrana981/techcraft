@@ -9,19 +9,19 @@ export class HeaderComponent {
  navList = [
   {
     text:'Home',
-    url:'/home'
+    url:'#'
   },
   {
     text:'About',
-    url:'/about'
+    url:'#about'
   },
   {
     text:'Our Mission',
-    url:'/our-mission'
+    url:'#our-mission'
   },
   {
     text:'Contact',
-    url:'/contact'
+    url:'#contact'
   }
 
  ]

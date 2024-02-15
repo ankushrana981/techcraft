@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './modules/home/home.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { SharedModule } from './shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

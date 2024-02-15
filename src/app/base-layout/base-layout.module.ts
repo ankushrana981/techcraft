@@ -10,12 +10,12 @@ const routes: Routes = [
     path: '',
     component: BaseLayoutComponent,
     children:[
-      {
-        path:'',
-        loadChildren : () => import('../modules/home/home.module').then(m => m.HomeModule),
-      },
+      // {
+      //   path:'',
+      //   loadChildren : () => import('../modules/home/home.module').then(m => m.HomeModule),
+      // },
       { 
-        path:'contact',
+        path:'',
         loadChildren:()=> import('../modules/contact/contact.module').then(m=>m.ContactModule)
       },
     ]

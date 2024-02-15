@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from './contact.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '../../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     SharedModule,
+    FormsModule,
     RouterModule.forChild(routes)
   ]
 })

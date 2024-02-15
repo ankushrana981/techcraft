@@ -7,7 +7,7 @@
             <div class="col-2">
                 <ul class="list-unstyle mt-4">
                     <li *ngFor="let item of navList">
-                        <a class="d-flex align-items-center py-3" title={{item.text}} routerLink="{{item.url}}">
+                        <a class="d-flex align-items-center py-3" title={{item.text}} [href]="item.url">
                             <span class="ms-1">{{item.text}}</span>
                         </a>
                     </li>
@@ -17,7 +17,7 @@
             <div class="col-3">
                 <ul class="list-unstyle mt-4">
                     <li *ngFor="let item of contactList">
-                        <a class="d-flex align-items-center py-3" title="{{item.text}}" routerLink="{{item.url}}">
+                        <a class="d-flex align-items-center py-3" title="{{item.text}}" href="{{item.url}}">
                          <img src="{{item.img}}" alt="">   <span class="ms-4 text-size">{{item.text}}</span>
                         </a>
                     </li>
