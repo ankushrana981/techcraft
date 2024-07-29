@@ -22,6 +22,16 @@ export class FooterComponent {
     {
       text:'Contact',
       url:'#contact'
+    },
+    {
+      text:'Book a Meeting',
+      url:'https://outlook.office.com/bookwithme/user/ecdab1dfbfc34b9a986151e64d6f2da5@techcraftinnovations.com?anonymous',
+      target:"_blank"
+    },
+    {
+      text:'Remote Support',
+      url:'https://techcraft.screenconnect.com/',
+      target:"_blank"
     }
   ];
   contactList =[

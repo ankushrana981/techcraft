@@ -7,7 +7,7 @@
             <div class="col-2">
                 <ul class="list-unstyle mt-4">
                     <li *ngFor="let item of navList">
-                        <a class="d-flex align-items-center py-3" title={{item.text}} [href]="item.url">
+                        <a class="d-flex align-items-center py-1" title={{item.text}} [href]="item.url" target="{{item.target? item.target :'_self'}}">
                             <span class="ms-1">{{item.text}}</span>
                         </a>
                     </li>
