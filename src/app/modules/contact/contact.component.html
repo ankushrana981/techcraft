@@ -32,12 +32,22 @@
 				  </div>
 			</div>
 			<div  class="col-3 my-4 pe-5 d-flex justify-content-end align-items-end">
-				<button
-				class="btn btn-primary submitButton px-4 mb-5 g-recaptcha"
-				type="submit" data-sitekey="6Lc8WnMpAAAAAE2lOgGInyjONKgvWYJwGk012gbL" 
-				data-callback='onSubmit' 
-				data-action='submit'
-				(click)="send()" >Submit</button>
+				<div class="row">
+					<div class="m-2">
+						<input class="me-2" type="checkbox" [(ngModel)]="Agreed">						
+						<span class="terms">By clicking "Submit" I agree to receive emails, text messages, and phone calls. Consent is not a condition of purchase. Msg & data rates may apply. Message frequency varies. Unsubscribe at any time by replying STOP.
+							<br>
+							Any personal information that we collect (as identified in the “Personal Data We Collect” section) will not be shared with third parties
+						</span>
+					
+					</div>
+					<button
+					class="btn btn-primary submitButton px-4 mb-5"
+					type="submit" 
+					(click)="send()" 
+					[disabled]="!Agreed">Submit</button>
+				</div>
+
 			</div>
 		</div>
 	</div>

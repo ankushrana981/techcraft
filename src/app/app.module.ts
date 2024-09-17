@@ -7,6 +7,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { RECAPTCHA_V3_SITE_KEY,RecaptchaV3Module } from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,15 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     SharedModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RecaptchaV3Module
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    {
+      provide:RECAPTCHA_V3_SITE_KEY,
+      useValue:"6Lc8WnMpAAAAAE2lOgGInyjONKgvWYJwGk012gbL"
+    }
   ],
   bootstrap: [AppComponent]
 })

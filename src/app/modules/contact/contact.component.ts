@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ReCaptchaV3Service} from "ng-recaptcha";
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +10,14 @@ import { Component } from '@angular/core';
 export class ContactComponent {
 
   ContactBody:any = {}
+  Agreed = false
+  constructor(private reCaptchaV3Service:ReCaptchaV3Service){
+
+  }
   send(){
-    console.log(JSON.stringify(this.ContactBody))
+    this.reCaptchaV3Service.execute("importantAction").subscribe((token)=>{
+      console.log(JSON.stringify(this.ContactBody),"submit: ",this.Agreed," Token: ",token)
+    })
+    
   }
 }

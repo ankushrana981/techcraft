@@ -42,8 +42,8 @@ export class FooterComponent {
     },
     {
       img:'../../../assets/images/phone.svg',
-      text:'845-925-4318',
-      url:'tel:8459254318'
+      text:'845-502-Tech(8324)',
+      url:'tel:18455028324'
     }
   ]
 }
